@@ -1,82 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio | Matías</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio | Matías Zamudio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <main>
 
   <section class="hero">
-    <div>
+    <div class="hero-text">
       <h1>Matías Zamudio</h1>
       <h3>Estudiante de Ingeniería de Sistemas</h3>
       <p>
-        Desarrollo soluciones digitales con enfoque lógico, estructurado y orientado a resultados.
+        Desarrollo soluciones digitales con enfoque lógico, estructurado
+        y orientado a resultados.
       </p>
     </div>
 
-    <div>
-      <img src="img/perfillkzo+.jpg" class="perfil" alt="Foto de perfil">
+    <div class="hero-image">
+      <img src="img/perfillkzo+.jpg" class="perfil" alt="Foto de perfil"/>
     </div>
   </section>
 
-<section class="grid about">
-  <div class="about-text">
-    <h2>Quién soy</h2>
-    <p>
-      Soy estudiante de Ingeniería de Sistemas en la Universidad de Lima, con enfoque en desarrollo web
-      y en la creación de aplicaciones funcionales y bien estructuradas. Disfruto construir proyectos
-      completos, desde la interfaz hasta la lógica, cuidando la experiencia del usuario y el flujo real de uso.
-      <br><br>
-      Trabajo principalmente con HTML, CSS y JavaScript, integrando servicios como Firebase para bases de datos
-      y despliegue. Me motiva resolver problemas reales mediante código y seguir aprendiendo mientras desarrollo
-      proyectos cada vez más sólidos.
-    </p>
-  </div>
+  <section class="about">
+    <div class="about-text">
+      <h2>Quién soy</h2>
+      <p>
+        Soy estudiante de Ingeniería de Sistemas en la Universidad de Lima,
+        con enfoque en desarrollo web y creación de aplicaciones funcionales
+        y bien estructuradas. Disfruto construir proyectos completos, desde
+        la interfaz hasta la lógica, cuidando la experiencia del usuario.
+        <br><br>
+        Trabajo principalmente con HTML, CSS y JavaScript, integrando servicios
+        como Firebase. Me motiva resolver problemas reales mediante código.
+      </p>
+    </div>
 
-  <div class="about-logo">
-    <img src="img/Universidad_de_Lima_logo.png" alt="Logo Universidad de Lima">
-  </div>
-</section>
+    <div class="about-logo">
+      <img src="img/Universidad_de_Lima_logo.png" alt="Universidad de Lima"/>
+    </div>
+  </section>
 
-  <section class="grid tech">
+  <section class="section">
     <h2>Tecnologías dominadas</h2>
-    <div class="tech-list">
-      <div class="tech-item">🌐 HTML</div>
-      <div class="tech-item">🎨 CSS</div>
-      <div class="tech-item">⚙️ JavaScript</div>
-      <div class="tech-item">🐙 Git & GitHub</div>
-      <div class="tech-item">🗄️ Data base SQL</div>
-      <div class="tech-item">🧠 Lógica</div>
-      <div class="tech-item">🐍 Python</div> 
-      <div class="tech-item">🔥 Firebase Firestore/Hosting</div>
-  </section>
-  <section class="grid languages">
-    <h2>Idiomas</h2>
-    <div class="languages-list">
-      <div class="language-item">Español</div>
-       <div class="language-item">Inglés — Avanzado</div>
 
+    <div class="tech-list">
+      <div class="tech-item" data-desc="Lenguaje base para estructurar interfaces web semánticas.">🌐 HTML</div>
+      <div class="tech-item" data-desc="Diseño responsive, layouts modernos y animaciones.">🎨 CSS</div>
+      <div class="tech-item" data-desc="Lógica, interacción y consumo de APIs.">⚙️ JavaScript</div>
+      <div class="tech-item" data-desc="Control de versiones y trabajo colaborativo.">🐙 Git & GitHub</div>
+      <div class="tech-item" data-desc="Modelado y consultas en bases de datos relacionales.">🗄️ SQL</div>
+      <div class="tech-item" data-desc="Pensamiento estructurado para resolución de problemas.">🧠 Lógica</div>
+      <div class="tech-item" data-desc="Automatización y scripting.">🐍 Python</div>
+      <div class="tech-item" data-desc="Backend serverless y hosting en producción.">🔥 Firebase</div>
     </div>
   </section>
 
-  <section class="grid">
+  <section class="section">
+    <h2>Idiomas</h2>
+
+    <div class="languages-list">
+      <div class="language-item">
+        Español
+        <span>Idioma nativo · Perú</span>
+      </div>
+
+      <div class="language-item">
+        Inglés
+        <span>B2 · Instituto Peruano Británico</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <h2>Mis proyectos</h2>
 
     <div class="project" onclick="openProject('p1')">
-      <h4>Sistema de Reservas de un salón de belleza</h4>
-      <p>Plataforma web para agendar citas con selección de servicios y fechas.</p>
+      <h4>Sistema de Reservas – Salón de Belleza</h4>
+      <p>Plataforma web para gestión de citas.</p>
     </div>
 
     <div class="project" onclick="openProject('p2')">
-      <h4>Portafolio personal </h4>
-      <p>Web personal desarrollado desde cero utilizando HTML, CSS y JavaScript.</p>
+      <h4>Portafolio personal</h4>
+      <p>Web desarrollada desde cero con HTML, CSS y JS.</p>
+    </div>
+    
+    <div class="project" onclick="openProject('p3')">
+      <h4>Web de productos</h4>
+      <p>Web que muestra los productos de una tienda virtual</p>
     </div>
   </section>
+
+  <footer class="footer">
+    <h2>Mis redes</h2>
+    <div class="socials">
+      <a href="https://github.com/MaViZaG2" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/matias-zamudio" target="_blank">LinkedIn</a>
+      <a href="mailto:matiasvzg09@gmail.com">Correo</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </footer>
 
 </main>
 
@@ -92,7 +118,7 @@
 
       <div class="modal-image">
         <button class="nav prev" onclick="prevImage()">‹</button>
-        <img id="modal-img" src="img/gato.jpg">
+        <img id="modal-img" />
         <button class="nav next" onclick="nextImage()">›</button>
       </div>
     </div>
@@ -102,3 +128,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
