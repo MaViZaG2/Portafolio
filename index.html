@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Matías</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+  <section class="hero">
+    <div>
+      <h1>Matías Zamudio</h1>
+      <h3>Estudiante de Ingeniería de Sistemas</h3>
+      <p>
+        Desarrollo soluciones digitales con enfoque lógico, estructurado y orientado a resultados.
+      </p>
+    </div>
+
+    <div>
+      <img src="img/perfillkzo+.jpg" class="perfil" alt="Foto de perfil">
+    </div>
+  </section>
+
+<section class="grid about">
+  <div class="about-text">
+    <h2>Quién soy</h2>
+    <p>
+      Soy estudiante de Ingeniería de Sistemas en la Universidad de Lima, con enfoque en desarrollo web
+      y en la creación de aplicaciones funcionales y bien estructuradas. Disfruto construir proyectos
+      completos, desde la interfaz hasta la lógica, cuidando la experiencia del usuario y el flujo real de uso.
+      <br><br>
+      Trabajo principalmente con HTML, CSS y JavaScript, integrando servicios como Firebase para bases de datos
+      y despliegue. Me motiva resolver problemas reales mediante código y seguir aprendiendo mientras desarrollo
+      proyectos cada vez más sólidos.
+    </p>
+  </div>
+
+  <div class="about-logo">
+    <img src="img/Universidad_de_Lima_logo.png" alt="Logo Universidad de Lima">
+  </div>
+</section>
+
+  <section class="grid tech">
+    <h2>Tecnologías dominadas</h2>
+    <div class="tech-list">
+      <div class="tech-item">🌐 HTML</div>
+      <div class="tech-item">🎨 CSS</div>
+      <div class="tech-item">⚙️ JavaScript</div>
+      <div class="tech-item">🐙 Git & GitHub</div>
+      <div class="tech-item">🗄️ Data base SQL</div>
+      <div class="tech-item">🧠 Lógica</div>
+      <div class="tech-item">🐍 Python</div> 
+      <div class="tech-item">🔥 Firebase Firestore/Hosting</div>
+  </section>
+  <section class="grid languages">
+    <h2>Idiomas</h2>
+    <div class="languages-list">
+      <div class="language-item">Español</div>
+       <div class="language-item">Inglés — Avanzado</div>
+
+    </div>
+  </section>
+
+  <section class="grid">
+    <h2>Mis proyectos</h2>
+
+    <div class="project" onclick="openProject('p1')">
+      <h4>Sistema de Reservas de un salón de belleza</h4>
+      <p>Plataforma web para agendar citas con selección de servicios y fechas.</p>
+    </div>
+
+    <div class="project" onclick="openProject('p2')">
+      <h4>Portafolio personal </h4>
+      <p>Web personal desarrollado desde cero utilizando HTML, CSS y JavaScript.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProject()">×</span>
+
+    <div class="modal-grid">
+      <div class="modal-text">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+
+      <div class="modal-image">
+        <button class="nav prev" onclick="prevImage()">‹</button>
+        <img id="modal-img" src="img/gato.jpg">
+        <button class="nav next" onclick="nextImage()">›</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
